@@ -1,0 +1,21 @@
+{
+    "appName": "hobbslogger",
+    "roleName": "pinpointLambdaRole09263e00",
+    "cloudformationPolicyName": "cloudformationPolicy09263e00",
+    "cloudWatchPolicyName": "cloudWatchPolicy09263e00",
+    "pinpointPolicyName": "pinpointPolicy09263e00",
+    "authPolicyName": "pinpoint_amplify_09263e00",
+    "unauthPolicyName": "pinpoint_amplify_09263e00",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

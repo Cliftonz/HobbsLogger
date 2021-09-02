@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hobbslogger-dev-230931-authRole",
+      "UnauthRoleArn": "arn:aws:iam::780561343683:role/amplify-hobbslogger-dev-230931-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::780561343683:role/amplify-hobbslogger-dev-230931-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-hobbslogger-dev-230931-deployment",
+      "UnauthRoleName": "amplify-hobbslogger-dev-230931-unauthRole",
+      "StackName": "amplify-hobbslogger-dev-230931",
+      "StackId": "arn:aws:cloudformation:us-east-1:780561343683:stack/amplify-hobbslogger-dev-230931/3394d0f0-0b9b-11ec-8080-12197adfd2f9",
+      "AmplifyAppId": "d1rdjeyxf4do25"
+    },
+    "categories": {
+      "auth": {
+        "cognitoc822136b": {}
+      },
+      "function": {
+        "S3Triggerbe2ec471": {
+          "deploymentBucketName": "amplify-hobbslogger-dev-230931-deployment",
+          "s3Key": "amplify-builds/S3Triggerbe2ec471-3559336b48617555582f-build.zip"
+        }
+      }
+    }
+  }
+}
