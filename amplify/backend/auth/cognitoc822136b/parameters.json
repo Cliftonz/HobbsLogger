@@ -1,12 +1,12 @@
 {
     "identityPoolName": "hobbslogger_identitypool_c822136b",
-    "allowUnauthenticatedIdentities": true,
+    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "cognit52adc236",
     "userPoolName": "cognitoc822136b_userpool_52adc236",
     "autoVerifiedAttributes": [
         "email"
     ],
-    "mfaConfiguration": "OFF",
+    "mfaConfiguration": "OPTIONAL",
     "mfaTypes": [
         "SMS Text Message"
     ],
@@ -14,23 +14,33 @@
     "smsVerificationMessage": "Your verification code is {####}",
     "emailVerificationSubject": "Your verification code",
     "emailVerificationMessage": "Your verification code is {####}",
-    "defaultPasswordPolicy": false,
-    "passwordPolicyMinLength": 8,
+    "defaultPasswordPolicy": true,
+    "passwordPolicyMinLength": "16",
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
         "email"
     ],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
-    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientRefreshTokenValidity": "1",
     "userpoolClientWriteAttributes": [
+        "phone_number",
         "email"
     ],
     "userpoolClientReadAttributes": [
-        "email"
+        "email",
+        "family_name",
+        "middle_name",
+        "gender",
+        "locale",
+        "name",
+        "nickname",
+        "phone_number",
+        "picture",
+        "profile"
     ],
     "userpoolClientLambdaRole": "cognit52adc236_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": false,
+    "userpoolClientSetAttributes": true,
     "authSelections": "identityPoolAndUserPool",
     "resourceName": "cognitoc822136b",
     "sharedId": "c822136b",
@@ -45,5 +55,23 @@
             "UnauthRole",
             "Arn"
         ]
-    }
+    },
+    "useDefault": "manual",
+    "thirdPartyAuth": true,
+    "authProviders": [
+        "graph.facebook.com"
+    ],
+    "userPoolGroups": false,
+    "adminQueries": true,
+    "triggers": "{}",
+    "hostedUI": false,
+    "userPoolGroupList": [],
+    "adminQueryGroup": "admin",
+    "serviceName": "Cognito",
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "breakCircularDependency": true,
+    "permissions": [],
+    "dependsOn": []
 }

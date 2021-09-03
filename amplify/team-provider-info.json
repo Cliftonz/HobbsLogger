@@ -13,12 +13,18 @@
     },
     "categories": {
       "auth": {
-        "cognitoc822136b": {}
+        "cognitoc822136b": {
+          "facebookAppId": "371852737769669"
+        }
       },
       "function": {
         "S3Triggerbe2ec471": {
           "deploymentBucketName": "amplify-hobbslogger-dev-230931-deployment",
           "s3Key": "amplify-builds/S3Triggerbe2ec471-3559336b48617555582f-build.zip"
+        },
+        "AdminQueries0fd36851": {
+          "deploymentBucketName": "amplify-hobbslogger-dev-230931-deployment",
+          "s3Key": "amplify-builds/AdminQueries0fd36851-2b505077786265394d71-build.zip"
         }
       }
     }

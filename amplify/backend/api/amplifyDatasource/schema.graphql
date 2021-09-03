@@ -1,10 +1,61 @@
-type Task @model {
+type User
+@model
+@auth(rules: [{ allow: owner }])
+@key(fields: ["email"])
+{
   id: ID!
-  title: String!
-  description: String
-  status: String
+  firstName: String!
+  lastName: String!
+  email: String!
+  flights: [Flight!] @connection(keyName: "flightsByDate")
+  planes: [Planes!] @connection(keyName: "byName")
 }
-type Note @model {
+
+type Flight
+@model
+@auth(rules: [{ allow: owner }])
+@key(name: "flightsByDate",fields: ["createdAt"],queryField: "flightsByDate")
+{
   id: ID!
-  content: String!
+  plane: Planes @connection
+  tachTime: Float
+  tachPictures: [Picture]! @connection(keyName: "byName")
+  hobbsTime: Float
+  hobbsPictures: [Picture]!@connection(keyName: "byName")
+  createdAt: String!
 }
+
+type Planes
+@model
+@auth(rules: [{ allow: owner }])
+@key(name: "byName",fields: ["name"])
+{
+  id: ID!
+  name: String!
+  type: String!
+  Model: String!
+  hasTach: Boolean!
+  Default: Boolean!
+}
+
+type Picture
+@model
+@auth(rules: [{allow: owner}])
+@key(name: "byName",fields: ["name"])
+{
+  id: ID!
+  name: String
+  owner: String!
+
+  # Reference the S3Object type from a field.
+  file: S3Object
+}
+
+type S3Object
+{
+  bucket: String!
+  region: String!
+  key: String!
+}
+
+
