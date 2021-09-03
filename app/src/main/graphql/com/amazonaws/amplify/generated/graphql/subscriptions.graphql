@@ -1,10 +1,41 @@
 # this is an auto generated file. This will be overwritten
-subscription OnCreateTask {
-  onCreateTask {
+subscription OnCreateUser {
+  onCreateUser {
     id
-    title
-    description
-    status
+    firstName
+    lastName
+    email
+    flights {
+      items {
+        id
+        tachTime
+        hobbsTime
+        createdAt
+        _version
+        _deleted
+        _lastChangedAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    planes {
+      items {
+        id
+        name
+        type
+        Model
+        hasTach
+        Default
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
     _version
     _deleted
     _lastChangedAt
@@ -12,12 +43,43 @@ subscription OnCreateTask {
     updatedAt
   }
 }
-subscription OnUpdateTask {
-  onUpdateTask {
+subscription OnUpdateUser {
+  onUpdateUser {
     id
-    title
-    description
-    status
+    firstName
+    lastName
+    email
+    flights {
+      items {
+        id
+        tachTime
+        hobbsTime
+        createdAt
+        _version
+        _deleted
+        _lastChangedAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    planes {
+      items {
+        id
+        name
+        type
+        Model
+        hasTach
+        Default
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
     _version
     _deleted
     _lastChangedAt
@@ -25,12 +87,43 @@ subscription OnUpdateTask {
     updatedAt
   }
 }
-subscription OnDeleteTask {
-  onDeleteTask {
+subscription OnDeleteUser {
+  onDeleteUser {
     id
-    title
-    description
-    status
+    firstName
+    lastName
+    email
+    flights {
+      items {
+        id
+        tachTime
+        hobbsTime
+        createdAt
+        _version
+        _deleted
+        _lastChangedAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    planes {
+      items {
+        id
+        name
+        type
+        Model
+        hasTach
+        Default
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
     _version
     _deleted
     _lastChangedAt
@@ -38,10 +131,173 @@ subscription OnDeleteTask {
     updatedAt
   }
 }
-subscription OnCreateNote {
-  onCreateNote {
+subscription OnCreateFlight {
+  onCreateFlight {
     id
-    content
+    plane {
+      id
+      name
+      type
+      Model
+      hasTach
+      Default
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    tachTime
+    tachPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    hobbsTime
+    hobbsPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+subscription OnUpdateFlight {
+  onUpdateFlight {
+    id
+    plane {
+      id
+      name
+      type
+      Model
+      hasTach
+      Default
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    tachTime
+    tachPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    hobbsTime
+    hobbsPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+subscription OnDeleteFlight {
+  onDeleteFlight {
+    id
+    plane {
+      id
+      name
+      type
+      Model
+      hasTach
+      Default
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    tachTime
+    tachPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    hobbsTime
+    hobbsPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+subscription OnCreatePlanes {
+  onCreatePlanes {
+    id
+    name
+    type
+    Model
+    hasTach
+    Default
     _version
     _deleted
     _lastChangedAt
@@ -49,10 +305,14 @@ subscription OnCreateNote {
     updatedAt
   }
 }
-subscription OnUpdateNote {
-  onUpdateNote {
+subscription OnUpdatePlanes {
+  onUpdatePlanes {
     id
-    content
+    name
+    type
+    Model
+    hasTach
+    Default
     _version
     _deleted
     _lastChangedAt
@@ -60,10 +320,59 @@ subscription OnUpdateNote {
     updatedAt
   }
 }
-subscription OnDeleteNote {
-  onDeleteNote {
+subscription OnDeletePlanes {
+  onDeletePlanes {
     id
-    content
+    name
+    type
+    Model
+    hasTach
+    Default
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreatePicture {
+  onCreatePicture {
+    id
+    name
+    owner
+    file {
+      ...S3Object
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdatePicture {
+  onUpdatePicture {
+    id
+    name
+    owner
+    file {
+      ...S3Object
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeletePicture {
+  onDeletePicture {
+    id
+    name
+    owner
+    file {
+      ...S3Object
+    }
     _version
     _deleted
     _lastChangedAt

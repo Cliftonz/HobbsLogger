@@ -45,8 +45,6 @@ F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
 S
 #amplify/.config/project-config.json,7\1\71aea6ec305f2860962ac6d88a0040fbac346d57
-|
-Lapp/src/main/graphql/com/amazonaws/amplify/generated/graphql/queries.graphql,1\f\1fc0540fc540714283e275e7b161cbbed31b8f0e
 A
 amplify/README.md,5\b\5b22b11d37562d0c69b2816865c2f2de26b89d7c
 r
@@ -59,8 +57,6 @@ s
 Capp/src/main/java/com/CliftonSoftware/hobbsLogger/ui/theme/Shape.kt,0\e\0eac38e692c7faccf734b9fc9b2fcc37a00f8356
 f
 6amplify/backend/storage/s32a861c76/storage-params.json,f\c\fc5ffe620c35e5b21540d7c23c1c266845d9903e
-‚
-Rapp/src/main/graphql/com/amazonaws/amplify/generated/graphql/subscriptions.graphql,4\8\48c1b8db9446f3e3e646e4b9885a350d1a0986c2
 z
 Japp/src/main/java/com/amplifyframework/datastore/generated/model/Task.java,f\b\fb18df71e317d28a714e241941669bed188dfef3
 s
@@ -76,3 +72,20 @@ h
 license.md,0\8\0807791ac019a0f833884873ed78f89386a91bff
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+B
+.graphqlconfig.yml,3\f\3f943c18a8b99ec434e1ab886a96965a9c21b888
+Š
+Zapp/src/main/java/com/amplifyframework/datastore/generated/model/AmplifyModelProvider.java,c\9\c90b6cb8c52c3f7b839b3405dababf8f5043d0f9
+S
+#amplify/backend/backend-config.json,9\4\947ed310829b54f4451f87fc5f31ae441d4abb2a
+€
+Pamplify/backend/auth/cognitoc822136b/cognitoc822136b-cloudformation-template.yml,6\f\6f33d76a971ef852cdd15e1ca4d5c0982d608854
+d
+4amplify/backend/auth/cognitoc822136b/parameters.json,2\2\22aebe70e86332d74ae5e70d76b6621c8bbd7720
+O
+amplify/team-provider-info.json,2\a\2a936681202283da3416fae7099b0d9b111fceb3
