@@ -1,13 +1,44 @@
 # this is an auto generated file. This will be overwritten
-mutation CreateTask(
-  $input: CreateTaskInput!
-  $condition: ModelTaskConditionInput
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
 ) {
-  createTask(input: $input, condition: $condition) {
+  createUser(input: $input, condition: $condition) {
     id
-    title
-    description
-    status
+    firstName
+    lastName
+    email
+    flights {
+      items {
+        id
+        tachTime
+        hobbsTime
+        createdAt
+        _version
+        _deleted
+        _lastChangedAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    planes {
+      items {
+        id
+        name
+        type
+        Model
+        hasTach
+        Default
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
     _version
     _deleted
     _lastChangedAt
@@ -15,15 +46,46 @@ mutation CreateTask(
     updatedAt
   }
 }
-mutation UpdateTask(
-  $input: UpdateTaskInput!
-  $condition: ModelTaskConditionInput
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
 ) {
-  updateTask(input: $input, condition: $condition) {
+  updateUser(input: $input, condition: $condition) {
     id
-    title
-    description
-    status
+    firstName
+    lastName
+    email
+    flights {
+      items {
+        id
+        tachTime
+        hobbsTime
+        createdAt
+        _version
+        _deleted
+        _lastChangedAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    planes {
+      items {
+        id
+        name
+        type
+        Model
+        hasTach
+        Default
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
     _version
     _deleted
     _lastChangedAt
@@ -31,15 +93,46 @@ mutation UpdateTask(
     updatedAt
   }
 }
-mutation DeleteTask(
-  $input: DeleteTaskInput!
-  $condition: ModelTaskConditionInput
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
 ) {
-  deleteTask(input: $input, condition: $condition) {
+  deleteUser(input: $input, condition: $condition) {
     id
-    title
-    description
-    status
+    firstName
+    lastName
+    email
+    flights {
+      items {
+        id
+        tachTime
+        hobbsTime
+        createdAt
+        _version
+        _deleted
+        _lastChangedAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    planes {
+      items {
+        id
+        name
+        type
+        Model
+        hasTach
+        Default
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
     _version
     _deleted
     _lastChangedAt
@@ -47,13 +140,185 @@ mutation DeleteTask(
     updatedAt
   }
 }
-mutation CreateNote(
-  $input: CreateNoteInput!
-  $condition: ModelNoteConditionInput
+mutation CreateFlight(
+  $input: CreateFlightInput!
+  $condition: ModelFlightConditionInput
 ) {
-  createNote(input: $input, condition: $condition) {
+  createFlight(input: $input, condition: $condition) {
     id
-    content
+    plane {
+      id
+      name
+      type
+      Model
+      hasTach
+      Default
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    tachTime
+    tachPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    hobbsTime
+    hobbsPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+mutation UpdateFlight(
+  $input: UpdateFlightInput!
+  $condition: ModelFlightConditionInput
+) {
+  updateFlight(input: $input, condition: $condition) {
+    id
+    plane {
+      id
+      name
+      type
+      Model
+      hasTach
+      Default
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    tachTime
+    tachPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    hobbsTime
+    hobbsPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+mutation DeleteFlight(
+  $input: DeleteFlightInput!
+  $condition: ModelFlightConditionInput
+) {
+  deleteFlight(input: $input, condition: $condition) {
+    id
+    plane {
+      id
+      name
+      type
+      Model
+      hasTach
+      Default
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    tachTime
+    tachPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    hobbsTime
+    hobbsPictures {
+      items {
+        id
+        name
+        owner
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+mutation CreatePlanes(
+  $input: CreatePlanesInput!
+  $condition: ModelPlanesConditionInput
+) {
+  createPlanes(input: $input, condition: $condition) {
+    id
+    name
+    type
+    Model
+    hasTach
+    Default
     _version
     _deleted
     _lastChangedAt
@@ -61,13 +326,17 @@ mutation CreateNote(
     updatedAt
   }
 }
-mutation UpdateNote(
-  $input: UpdateNoteInput!
-  $condition: ModelNoteConditionInput
+mutation UpdatePlanes(
+  $input: UpdatePlanesInput!
+  $condition: ModelPlanesConditionInput
 ) {
-  updateNote(input: $input, condition: $condition) {
+  updatePlanes(input: $input, condition: $condition) {
     id
-    content
+    name
+    type
+    Model
+    hasTach
+    Default
     _version
     _deleted
     _lastChangedAt
@@ -75,13 +344,71 @@ mutation UpdateNote(
     updatedAt
   }
 }
-mutation DeleteNote(
-  $input: DeleteNoteInput!
-  $condition: ModelNoteConditionInput
+mutation DeletePlanes(
+  $input: DeletePlanesInput!
+  $condition: ModelPlanesConditionInput
 ) {
-  deleteNote(input: $input, condition: $condition) {
+  deletePlanes(input: $input, condition: $condition) {
     id
-    content
+    name
+    type
+    Model
+    hasTach
+    Default
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreatePicture(
+  $input: CreatePictureInput!
+  $condition: ModelPictureConditionInput
+) {
+  createPicture(input: $input, condition: $condition) {
+    id
+    name
+    owner
+    file {
+      ...S3Object
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdatePicture(
+  $input: UpdatePictureInput!
+  $condition: ModelPictureConditionInput
+) {
+  updatePicture(input: $input, condition: $condition) {
+    id
+    name
+    owner
+    file {
+      ...S3Object
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeletePicture(
+  $input: DeletePictureInput!
+  $condition: ModelPictureConditionInput
+) {
+  deletePicture(input: $input, condition: $condition) {
+    id
+    name
+    owner
+    file {
+      ...S3Object
+    }
     _version
     _deleted
     _lastChangedAt
