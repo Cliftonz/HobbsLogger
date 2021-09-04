@@ -1,19 +1,18 @@
 type User
 @model
-@auth(rules: [{ allow: owner }])
 @key(fields: ["email"])
 {
   id: ID!
   firstName: String!
   lastName: String!
-  email: String!
+  email: AWSEmail!
+  phone: AWSPhone
   flights: [Flight!] @connection(keyName: "flightsByDate")
   planes: [Planes!] @connection(keyName: "byName")
 }
 
 type Flight
 @model
-@auth(rules: [{ allow: owner }])
 @key(name: "flightsByDate",fields: ["createdAt"],queryField: "flightsByDate")
 {
   id: ID!
@@ -27,20 +26,18 @@ type Flight
 
 type Planes
 @model
-@auth(rules: [{ allow: owner }])
 @key(name: "byName",fields: ["name"])
 {
   id: ID!
   name: String!
   type: String!
-  Model: String!
-  hasTach: Boolean!
-  Default: Boolean!
+  model: String!
+  hasTach: Boolean
+  defaultPlane: Boolean
 }
 
 type Picture
 @model
-@auth(rules: [{allow: owner}])
 @key(name: "byName",fields: ["name"])
 {
   id: ID!

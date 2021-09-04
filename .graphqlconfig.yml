@@ -5,6 +5,7 @@ projects:
       - app/src/main/graphql/**/*.graphql
     excludes:
       - ./amplify/**
+      #- ./amplify/backend/api/amplifyDatasource/build/**/*.grahql
     extensions:
       amplify:
         codeGenTarget: ''

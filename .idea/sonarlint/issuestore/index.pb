@@ -1,16 +1,8 @@
 
 >
 app/.gitignore,5\1\51e1c5d383dfaa35e0e7e5873a0a99355a86880f
-h
-8amplify/backend/function/S3Triggerbe2ec471/amplify.state,3\b\3b3125ba192e8576508eda7fb4a36dcb582514f2
-@
-amplify/cli.json,0\8\080bae80efcd2628f1d83f2311392e4e40bda90b
 s
 Capp/src/main/java/com/CliftonSoftware/hobbsLogger/ui/theme/Color.kt,9\0\90df21a38cb54254aeb2b8f219a30c08aeee15d8
-q
-Aamplify/backend/api/amplifyDatasource/stacks/CustomResources.json,9\c\9cc8573ef5fda272b3aa8acd987009b8902bce0c
-i
-9amplify/backend/function/S3Triggerbe2ec471/src/event.json,5\e\5e1d217d11ba5b56889f5867cab05ffabd490658
 ƒ
 Sapp/src/androidTest/java/com/CliftonSoftware/hobbsLogger/ExampleInstrumentedTest.kt,9\6\96104c3daa54ef22a7a9387371f7cd4d996a6e75
 t
@@ -23,36 +15,10 @@ X
 gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
 ;
 gradlew.bat,2\a\2a45a911a8f1836b0b6c5b758962572012d8f8c3
-ƒ
-Samplify/backend/predictions/identifyTextd44f031d/identifyTextd44f031d-template.json,4\d\4d9e7cffd6636f18e68d3e237f88ecbac33ed0c5
-g
-7amplify/backend/function/S3Triggerbe2ec471/src/index.js,a\7\a74fd2c3e80fdafda5a9939d74e378d046a613a3
-z
-Japp/src/main/java/com/amplifyframework/datastore/generated/model/Note.java,f\5\f50db34eb354c70fc54315fb4290b85dcb6d32fc
-k
-;amplify/backend/function/S3Triggerbe2ec471/src/package.json,d\f\df371a9579adadbe0d5e0fc4c6eb6083c9d3b485
-e
-5amplify/backend/analytics/hobbslogger/parameters.json,5\1\51e887b087d4a87ac877cba8f0444456dac7d837
-e
-5amplify/backend/api/amplifyDatasource/parameters.json,b\7\b751ae28a347dd8fda91102a67fd408e2b09b58e
-p
-@amplify/backend/predictions/identifyTextd44f031d/parameters.json,f\b\fb35fe6a884e142ac5a03bbdddf1397e184d46e3
-b
-2amplify/backend/storage/s32a861c76/parameters.json,f\2\f274494d652325d91d16af23bf0474162a2f557a
-{
-Kamplify/backend/analytics/hobbslogger/pinpoint-cloudformation-template.json,e\6\e61c6b933124cad5acf7a011f54b938d3d986259
 F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
-S
-#amplify/.config/project-config.json,7\1\71aea6ec305f2860962ac6d88a0040fbac346d57
 |
 Lapp/src/main/graphql/com/amazonaws/amplify/generated/graphql/queries.graphql,1\f\1fc0540fc540714283e275e7b161cbbed31b8f0e
-A
-amplify/README.md,5\b\5b22b11d37562d0c69b2816865c2f2de26b89d7c
-r
-Bamplify/backend/storage/s32a861c76/s3-cloudformation-template.json,6\5\65029dbd662e7e7216cad91a768d4407d987fe72
-‰
-Yamplify/backend/function/S3Triggerbe2ec471/S3Triggerbe2ec471-cloudformation-template.json,1\0\1058d2876f1a5ebe9399a706c51e5836d0e4cf93
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 s
@@ -61,12 +27,8 @@ f
 6amplify/backend/storage/s32a861c76/storage-params.json,f\c\fc5ffe620c35e5b21540d7c23c1c266845d9903e
 ‚
 Rapp/src/main/graphql/com/amazonaws/amplify/generated/graphql/subscriptions.graphql,4\8\48c1b8db9446f3e3e646e4b9885a350d1a0986c2
-z
-Japp/src/main/java/com/amplifyframework/datastore/generated/model/Task.java,f\b\fb18df71e317d28a714e241941669bed188dfef3
 s
 Capp/src/main/java/com/CliftonSoftware/hobbsLogger/ui/theme/Theme.kt,d\0\d020436c0b2e3f24caaccd19c1df5dbcfbfba47d
-i
-9amplify/backend/api/amplifyDatasource/transform.conf.json,c\4\c49da68b799760d863144255f81397991ec84bc1
 r
 Bapp/src/main/java/com/CliftonSoftware/hobbsLogger/ui/theme/Type.kt,9\9\99540b3be570df67f3d19ea034b427479d09e5d2
 h
@@ -74,5 +36,3 @@ h
 :
 
 license.md,0\8\0807791ac019a0f833884873ed78f89386a91bff
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

@@ -15,7 +15,8 @@
       "auth": {
         "cognitoc822136b": {
           "facebookAppId": "371852737769669"
-        }
+        },
+        "userPoolGroups": {}
       },
       "function": {
         "S3Triggerbe2ec471": {
