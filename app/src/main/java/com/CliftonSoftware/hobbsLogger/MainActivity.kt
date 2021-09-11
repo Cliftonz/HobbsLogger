@@ -1,14 +1,18 @@
 package com.CliftonSoftware.hobbsLogger
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
+import android.view.OrientationEventListener
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.camera.core.ImageCapture
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.CliftonSoftware.hobbsLogger.Screens.Navigation
 import com.CliftonSoftware.hobbsLogger.ui.theme.HobbsLoggerTheme
 import com.amazonaws.mobile.client.AWSMobileClient
 import com.amazonaws.mobile.client.Callback
@@ -52,27 +56,7 @@ class MainActivity : ComponentActivity() {
         })
 
         setContent {
-            Greeting("Zac")
-
-//            HobbsLoggerTheme {
-//                // A surface container using the 'background' color from the theme
-//                Surface(color = MaterialTheme.colors.background) {
-//                    Greeting("Android")
-//                }
-//            }
+            Navigation()
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    HobbsLoggerTheme {
-        Greeting("Android")
     }
 }
