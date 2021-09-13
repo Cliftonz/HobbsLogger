@@ -97,5 +97,13 @@ B
 .graphqlconfig.yml,3\f\3f943c18a8b99ec434e1ab886a96965a9c21b888
 <
 _aws.graphql,2\c\2c45a4bbf20b6e8f088dcacd038fd6abe4703a83
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+p
+@app/src/main/java/com/CliftonSoftware/hobbsLogger/Data/Flight.kt,a\b\ab75b605fdc7ee7ee1c6161e84b59532823fd98b
+d
+4amplify/backend/api/amplifyDatasource/schema.graphql,7\e\7ecc2498caea65bc30a7f99f9d58a34561a78a74
+€
+Papp/src/main/java/com/CliftonSoftware/hobbsLogger/Screens/Pages/PictureScreen.kt,6\1\614e7c99b42a67127d2bd6207bc8334f80058ede
+n
+>app/src/main/java/com/CliftonSoftware/hobbsLogger/Data/Data.kt,3\8\38a7570546d51cc06e273c8842a33168a48b9aaa
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35

@@ -5,5 +5,6 @@ data class Plane (val id: String,
                   val type: String,
                   val model: String,
                   val hasTach: Boolean,
-                  val defaultPlane: Boolean
+                  val defaultPlane: Boolean,
+                  val time: String, // remove
                   )
