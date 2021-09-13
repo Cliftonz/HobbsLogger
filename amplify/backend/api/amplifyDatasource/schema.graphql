@@ -16,6 +16,7 @@ type Flight
 @key(name: "flightsByDate",fields: ["createdAt"],queryField: "flightsByDate")
 {
   id: ID!
+  flightNumber: Int
   plane: Planes @connection
   tachTime: Float
   tachPictures: [Picture]! @connection(keyName: "byName")

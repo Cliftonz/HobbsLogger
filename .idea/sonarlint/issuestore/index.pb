@@ -97,5 +97,5 @@ B
 .graphqlconfig.yml,3\f\3f943c18a8b99ec434e1ab886a96965a9c21b888
 <
 _aws.graphql,2\c\2c45a4bbf20b6e8f088dcacd038fd6abe4703a83
-d
-4amplify/backend/api/amplifyDatasource/schema.graphql,7\e\7ecc2498caea65bc30a7f99f9d58a34561a78a74
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
