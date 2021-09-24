@@ -6,8 +6,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
+import com.CliftonSoftware.hobbsLogger.Components.CustomListItem
 import com.CliftonSoftware.hobbsLogger.Data.DataProvider
-import com.CliftonSoftware.hobbsLogger.Fragments.CustomListItem
 
 @Composable
 fun HomeScreen(navController: NavController) {
@@ -19,7 +19,7 @@ fun HomeScreen(navController: NavController) {
 )
 @Composable
 fun HomeContent(){
-    val flights = remember {DataProvider.flightList}
+    val flights = remember { DataProvider.flightList}
     LazyColumn(
 
     ){

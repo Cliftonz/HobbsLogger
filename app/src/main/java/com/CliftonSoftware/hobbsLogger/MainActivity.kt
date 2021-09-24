@@ -1,24 +1,14 @@
 package com.CliftonSoftware.hobbsLogger
 
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
-import android.view.OrientationEventListener
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.camera.core.ImageCapture
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
 import com.CliftonSoftware.hobbsLogger.Screens.Navigation
-import com.CliftonSoftware.hobbsLogger.ui.theme.HobbsLoggerTheme
 import com.amazonaws.mobile.client.AWSMobileClient
 import com.amazonaws.mobile.client.Callback
 import com.amazonaws.mobile.client.UserStateDetails
 import com.amplifyframework.AmplifyException
-import com.amplifyframework.analytics.pinpoint.AWSPinpointAnalyticsPlugin
 import com.amplifyframework.api.aws.AWSApiPlugin
 import com.amplifyframework.auth.cognito.AWSCognitoAuthPlugin
 import com.amplifyframework.core.Amplify

@@ -5,8 +5,7 @@ type User
   id: ID!
   firstName: String!
   lastName: String!
-  email: AWSEmail!
-  phone: AWSPhone
+  email: String!
   flights: [Flight!] @connection(keyName: "flightsByDate")
   planes: [Planes!] @connection(keyName: "byName")
 }
@@ -16,7 +15,6 @@ type Flight
 @key(name: "flightsByDate",fields: ["createdAt"],queryField: "flightsByDate")
 {
   id: ID!
-  flightNumber: Int
   plane: Planes @connection
   tachTime: Float
   tachPictures: [Picture]! @connection(keyName: "byName")
@@ -32,9 +30,9 @@ type Planes
   id: ID!
   name: String!
   type: String!
-  model: String!
-  hasTach: Boolean
-  defaultPlane: Boolean
+  Model: String!
+  hasTach: Boolean!
+  isDefault: Boolean!
 }
 
 type Picture
